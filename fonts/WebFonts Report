@@ -1,0 +1,132 @@
+Converted Files:
+****************
+
+BebasNeue Bold.ufo
+------------------
+source: /Users/asq/Desktop/BebasNeue Bold.ufo
+
+Build OTF
+'''''''''
+    path: /Users/asq/Desktop/WORK/NORTHERN PORTAL/fonts/BebasNeue_Bold_web.otf
+    Source is a UFO file. Generate OTF.
+        --------------------
+        
+        parts Report
+        
+        [Warning] The copyright was normalized for storage in the CFF table and consequently some characters were dropped: 'Copyright c 2010 by Ryoichi Tsunekawa. All rights reserved.'
+        
+        
+        makeotf Report
+        
+        Versions:
+            tx        1.0.57
+            absfont   1.0.47
+            ctutil    2.0.1
+            dynarr    2.0.3
+            sfntread  1.0.5
+            t2cstr    1.0.15
+            cffread   2.0.45
+            cffwrite  1.0.39
+            sfntwrite 1.0.6
+            pstoken   2.0.9
+            t1cstr    1.0.14
+            t1read    1.0.40
+            ttread    1.0.19
+            cfembed   2.0.25
+            pdfwrite  1.0.5
+            svread    1.0.6
+            t1write   1.0.31
+            svwrite   1.1.9
+            uforead   1.0.5
+            ufwrite   1.0.0
+        
+        makeotf [Note] Converting source font '/font.otf' to temporary Unix Type1 font file '/font.otf.tmp'.
+        makeotf [Note] setting the DONT_USE_WIN_LINE_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        makeotf [Note] Writing options file /current.fpr
+        makeotf [Note] Running makeotfexe with commands:
+           cd ""
+           makeotfexe -f font.otf.tmp -o tmpFZ1Nf4.otf -ff features -gf glyphOrder -mf menuname -r
+        makeotfexe [WARNING] <BebasNeueBold> [internal] Feature block seen before any language system statement.  You should place languagesystem statements before any feature definition [features 3]
+        makeotfexe [NOTE] Wrote new font file 'tmpFZ1Nf4.otf'.
+        
+        
+        Built release mode font 'tmpFZ1Nf4.otf' Revision 1.003
+        
+        --------------------
+        Hinting font /var/folders/x2/ysvd6p1j0jz5320sjt602mr80000gq/T/tmpFZ1Nf4.otf. Start time: Wed Feb 10 10:42:01 2016.
+        .........................................
+        .........................................
+        .........................................
+        .........................................
+        .........................................
+        .........................................
+        .........................................
+        .........................................
+        .........................................
+        .........................................
+        .........................................
+        ............................
+        Saving font file with new hints...Wed Feb 10 10:42:04 2016
+        Done with font /var/folders/x2/ysvd6p1j0jz5320sjt602mr80000gq/T/tmpFZ1Nf4.otf. End time: Wed Feb 10 10:42:04 2016.
+        
+
+Build TTF
+'''''''''
+    path: /Users/asq/Desktop/WORK/NORTHERN PORTAL/fonts/BebasNeue_Bold_web.ttf
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] Converting source font '/tmprfCGik.ttf' to temporary Unix Type1 font file '/tmprfCGik.ttf.tmp'.
+        makeotf [Note] setting the DONT_USE_WIN_LINE_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        makeotf [Note] Writing options file /current.fpr
+        makeotf [Note] Running makeotfexe with commands:
+           cd ""
+           makeotfexe -f tmprfCGik.ttf.tmp -o tmprfCGik.ttf -ff features -gf glyphOrder -mf menuname -r
+        makeotfexe [WARNING] <BebasNeueBold> [internal] Feature block seen before any language system statement.  You should place languagesystem statements before any feature definition [features 3]
+        makeotfexe [NOTE] Wrote new font file 'tmprfCGik.ttf'.
+        
+        
+        Built release mode font 'tmprfCGik.ttf' Revision 1.003
+        
+        --------------------
+
+Build WOFF (TTF)
+''''''''''''''''
+    path: /Users/asq/Desktop/WORK/NORTHERN PORTAL/fonts/BebasNeue_Bold_web.woff
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/asq/Desktop/WORK/NORTHERN PORTAL/fonts/BebasNeue_Bold_web.woff2
+
+Build EOT
+'''''''''
+    path: /Users/asq/Desktop/WORK/NORTHERN PORTAL/fonts/BebasNeue_Bold_web.eot
+
+Build SVG
+'''''''''
+    path: /Users/asq/Desktop/WORK/NORTHERN PORTAL/fonts/BebasNeue_Bold_web.svg
+
+
+
+TTFAutohint options:
+********************
+addTTFAutoHintInfo     = False
+dwClearType            = False
+fallbackScript         = False
+gdiClearType           = True
+grayScale              = False
+hintRangeMaximum       = 50
+hintRangeMinimum       = 8
+hintingLimit           = 200
+noHintingLimit         = False
+noXHeightIncreaseLimit = False
+overRideFontLicense    = False
+preHinting             = False
+symbolFont             = False
+xHeightIncreaseLimit   = 14
