@@ -150,8 +150,19 @@ body {
     z-index:20;
 }
 
+.cPointer {
+    cursor:none;
+}
+
 #bottom li {
     list-style-type:none;
+}
+
+
+#pointer {
+    position:fixed;
+    top:50px; left:50px;
+    pointer-events: none;
 }
 
 #main {
