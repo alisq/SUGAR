@@ -215,6 +215,10 @@ p {
     cursor:pointer;
 }
 
+#close:hover {
+    color:white;
+}
+
 
 @media (max-width:1000px) {
 
@@ -223,7 +227,7 @@ p {
     }
 
     #main {
-        font-size:30px;
+        font-size:21px;
         padding:4rem 1rem 1rem 1rem;
         letter-spacing: 0;
     }
