@@ -99,6 +99,11 @@
 
 }
 
+
+.link:hover {
+    color:#FFF;
+}
+
 body {
     font-family:suisse-intl;
     font-size:30px;
