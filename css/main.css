@@ -17,12 +17,12 @@
 
 @font-face {
     font-family: 'suisse-intl';
-    src: url('../fonts/si/SuisseIntl-Medium-WebTrial.eot');
-    src: url('../fonts/si/SuisseIntl-Medium-WebTrial.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/si/SuisseIntl-Medium-WebTrial.woff2') format('woff2'),
-         url('../fonts/si/SuisseIntl-Medium-WebTrial.woff') format('woff'),
-         url('../fonts/si/SuisseIntl-Medium-WebTrial.ttf') format('truetype'),
-         url('../fonts/si/SuisseIntl-Medium-WebTrial.svg') format('svg');
+    src: url('../fonts/si/SuisseIntl-Medium-WebM.eot');
+    src: url('../fonts/si/SuisseIntl-Medium-WebM.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/si/SuisseIntl-Medium-WebM.woff2') format('woff2'),
+         url('../fonts/si/SuisseIntl-Medium-WebM.woff') format('woff'),
+         url('../fonts/si/SuisseIntl-Medium-WebM.ttf') format('truetype'),
+         url('../fonts/si/SuisseIntl-Medium-WebM.svg') format('svg');
     font-weight: 500;
     font-style: normal;
 
@@ -193,6 +193,9 @@ p {
     position:fixed;
     background:#E6E6E6;
     box-sizing:border-box;
+    overflow-y: scroll;
+    box-sizing:border-box;
+    padding:0 1em 1em;
 }
 
 #modal-border {
@@ -201,15 +204,24 @@ p {
     top:5vw;
     left:5vw;
     position:fixed;
-    border:1px solid #000;
+    border:2px solid #000;
     pointer-events: none;
+}
+
+.inline-image {
+        width: 50%;
+    max-width: 100%;
+    height: auto;
+    /*float: left;*/
+    margin-right: 1em;
 }
 
 #close {
     font-weight:100;
     font-size:80px;
-    position:absolute;
-    right:0;
+    position:fixed;
+    right:5vw;
+    top:5vw;
     padding:0 0.25em;
     /*background:red;*/
     cursor:pointer;
@@ -261,6 +273,10 @@ p {
         left:0;
 
     }
+
+    .inline-image {
+        width: 100%;
+}
 
     
 }
