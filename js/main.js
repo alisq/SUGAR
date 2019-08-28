@@ -1,43 +1,23 @@
 
 
 
+$(window).load(function(){
+	if (window.location.hash !="null") {
+
+		loadContent(window.location.hash.replace("#!",""))
+	}
+})
+
 
 $(".link").click(function(){
-	var pageContents;
-
-
-  $("body")
-     .remove("#modal, #modal-border");
-
-     $.ajax({
-     	dataType:"json",
-     	url:"http://sugarcontemporary.com/pagedata/"+$(this).data("href"),
-     	success:function(e) {
-     		console.log(e);
-     		pageContents = "<h3>"+e.nodes[0].node.context_title+"</h3>";
-     		pageContents += "<div class='module-content'>"+e.nodes[0].node.body+"</div>";
-     		console.log(pageContents)
-
-			  $("<div id='modal'></div>")
-			      .append("<div id='close'>&times;</div>")
-			      .append(pageContents)
-			      .appendTo("body");
-
-			        $("<div id='modal-border'></div>")
-			      .appendTo("body");
-			
-
-     	}, 
-     	error: function() { 
-     				
-     	}
-     })
-
+	
+	loadContent($(this).data("href"))
 
 });     
 
 $(document).on("click","#close",function(){
     $("#modal, #modal-border").remove();
+    window.location.hash = "";
 })
   
 
@@ -68,3 +48,30 @@ $(".cPointer").hover(function(){
 }, function(){
 	$("#pointer").remove()
 })
+
+
+function loadContent(section) {
+	var pageContents;
+  	$("body").remove("#modal, #modal-border");
+     window.location.hash = "#!"+section;
+     $.ajax({
+     	dataType:"json",
+     	url:"http://sugarcontemporary.com/pagedata/"+section,
+     	success:function(e) {
+     		console.log(e);
+     		pageContents = "<h3>"+e.nodes[0].node.context_title+"</h3>";
+     		pageContents += "<div class='module-content'>"+e.nodes[0].node.body+"</div>";
+     		console.log(pageContents)
+
+			  $("<div id='modal'></div>")
+			      .append("<div id='close'>&times;</div>")
+			      .append(pageContents)
+			      .appendTo("body");
+
+			        $("<div id='modal-border'></div>")
+			      .appendTo("body");
+			
+
+     	}
+     })
+}
